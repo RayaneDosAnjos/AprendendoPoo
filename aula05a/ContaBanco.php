@@ -4,9 +4,14 @@ class ContaBanco{
     protected $tipo;
     private $dono;
     private $saldo;
-    private $status;
+    
+
+
+public function __construct($nc, $t, $d, $s){
+    $this-> numConta = $nc;
+    $this-> tipo = $t;
+    $this-> dono = $d;
+    $this-> saldo = $s;
+}
 }
 
-function __construction(){
-    
-}
