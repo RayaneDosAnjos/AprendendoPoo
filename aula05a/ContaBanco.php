@@ -5,6 +5,7 @@ class ContaBanco{
     private $dono;
     private $saldo;
     
+    
 
 
 public function __construct($nc, $t, $d, $s){
