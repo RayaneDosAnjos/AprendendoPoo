@@ -12,17 +12,17 @@ class Lutador{
 
 
 function apresentar(){
-    echo "<p>--------------------------------------</p>";
+    echo "<p>------------------------------------------------</p>";
     echo "<P>CHEGOU A HORA! O LUTADOR ".$this->getNome();
     echo "<P>VEIO DIRETAMENTE DE(A) ".$this->getNacionalidade();
     echo " TEM ".$this->getIdade()." ANOS E PESA ". $this->getPeso()." Kg";
-    echo "<br>ELE TEM ".$this->getVitorias()." VITÓRIAS";
+    echo "<br>ELE TEM ".$this->getVitorias()." VITÓRIAS ";
     echo $this->getDerrotas()." DERROTAS E ".$this->getEmpates()." EMPATES";
 }
 function status(){
-    echo "<p>---------------------------------------</p>";
+    echo "<p>-------------------------------------------------</p>";
     echo "<p>".$this->getNome()." é um peso ".$this->getCategoria();
-    echo " e ja ganhou ".$this->getVitorias()." vezes;";
+    echo " e ja ganhou ".$this->getVitorias()." vezes,";
     echo " perdeu ".$this->getDerrotas()." vezes e,";
     echo " empatou ".$this->getEmpates()." vezes.";
 }
