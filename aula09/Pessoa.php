@@ -9,12 +9,12 @@ class Pessoa{
         $this->idade++;
     }
 
-    //function __construct($nome,$idade,$sexo)
-    //{
-        //$this->nome=$nome;
-        //$this->idade=$idade;
-        //$this->sexo=$sexo;
-    //}
+    function __construct($nome=null,$idade=null,$sexo=null)
+    {
+        $this->nome=$nome;
+        $this->idade=$idade;
+        $this->sexo=$sexo;
+    }
 
     public function getNome(){
         return $this->nome;
