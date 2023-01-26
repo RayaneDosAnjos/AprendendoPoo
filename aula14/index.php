@@ -8,6 +8,7 @@
         <?php
             require_once 'Video.php';
             require_once 'Gafanhoto.php';
+            require_once '../aula15/Visualizacao.php';
 
             $v[0] = new video("Aula 1 de POO");
             $v[1] = new video("Aula 12 de PHP");
@@ -15,9 +16,12 @@
 
             $g[0] = new Gafanhoto("Jubileu",16,"M","Juba");
             $g[1] = new Gafanhoto("Creuza",12,"F","Creuzita");
-            var_dump($g);
+            
+            $vis[0] = new Visualizacao($g[0],$v[2]);
+            $vis[1] = new Visualizacao($g[0],$v[1]);
+            var_dump($vis);
 
-            //var_dump($v);
+            
         ?>
     </body>
 </html>
